@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07101c">
+  <title>Discipline Quest</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div id="titleScreen" class="title-screen">
+    <div class="title-panel">
+      <p class="eyebrow">A RETRO DISCIPLINE RPG</p>
+      <h1>DISCIPLINE QUEST</h1>
+      <p>One day. One choice. One legend.</p>
+      <button id="continueButton" class="primary">Continue</button>
+    </div>
+  </div>
+
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">DISCIPLINE QUEST</p>
+        <h1 id="modeHeading">Today's quest awaits.</h1>
+      </div>
+      <div class="streak-badge"><strong id="streakTop">0</strong><span>DAY STREAK</span></div>
+    </header>
+
+    <main>
+      <section class="card time-card">
+        <div>
+          <span class="label">Sydney time</span>
+          <strong id="liveClock">--:--:--</strong>
+          <p id="timeMessage">Loading quest status…</p>
+        </div>
+        <button id="notificationsButton" class="secondary">Enable alerts</button>
+      </section>
+
+      <section class="card">
+        <div class="section-heading"><h2>Today's Quest</h2><span id="dateLabel"></span></div>
+        <div class="quest-grid">
+          <button id="readyButton" class="quest-button"><span>🌅</span><strong>I'm Ready</strong><small>Morning hero moment</small></button>
+          <button id="successButton" class="quest-button"><span>🏆</span><strong>I Stuck To It</strong><small>Complete today's quest</small></button>
+          <button id="failureButton" class="quest-button danger"><span>👹</span><strong>I Slipped</strong><small>Own it and reset</small></button>
+          <button id="helpButton" class="quest-button"><span>⚔️</span><strong>Help Me</strong><small>Instant motivation</small></button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading"><h2>Character Status</h2><span>Saved on this device</span></div>
+        <div class="stats">
+          <div><span>Current streak</span><strong id="currentStreak">0 days</strong></div>
+          <div><span>Longest streak</span><strong id="longestStreak">0 days</strong></div>
+          <div><span>Level</span><strong id="level">1</strong></div>
+          <div><span>XP</span><strong id="xp">0 / 500</strong></div>
+        </div>
+        <div class="xp-bar"><div id="xpFill"></div></div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading"><h2>Cheat Day</h2><span>Maximum 1 per month</span></div>
+        <div class="split">
+          <div><strong id="cheatStatus">Available</strong><p id="cheatDescription"></p></div>
+          <button id="cheatButton" class="primary">Use Cheat Day</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading"><h2>Weekly Weigh-In</h2><span>Friday 6:45 pm</span></div>
+        <form id="weightForm">
+          <input id="weightInput" type="number" min="20" max="400" step="0.1" placeholder="Weight in kg" required>
+          <button class="primary" type="submit">Record</button>
+        </form>
+        <p id="weightSummary" class="muted">No weigh-ins recorded yet.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-heading"><h2>Hero Gallery</h2><span id="galleryCount"></span></div>
+        <div id="gallery" class="gallery"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="momentModal" class="modal hidden">
+    <div class="modal-panel">
+      <button id="closeModal" class="close">×</button>
+      <img id="momentImage" alt="SNES-style hero moment">
+      <h2 id="momentTitle"></h2>
+      <p id="momentQuote"></p>
+      <strong id="momentHero" class="hero-name"></strong>
+      <button id="continueModal" class="primary">Continue</button>
+    </div>
+  </div>
+
+  <script>
+    // Register service worker for PWA support
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+  <script src="src/app.js"></script>
+</body>
+</html>
