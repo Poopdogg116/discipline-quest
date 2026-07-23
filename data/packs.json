@@ -1,0 +1,72 @@
+[
+  {
+    "id": "starter",
+    "name": "Starter Pack",
+    "unlockDays": 0,
+    "description": "Your first heroes, unlocked immediately.",
+    "heroes": [
+      "Action Hero",
+      "Ryu",
+      "Goku"
+    ]
+  },
+  {
+    "id": "action",
+    "name": "Action Heroes",
+    "unlockDays": 7,
+    "description": "Unlock at 7-day streak: legendary action stars.",
+    "heroes": [
+      "Jean-Claude Van Damme",
+      "Arnold Schwarzenegger",
+      "Rocky Balboa"
+    ]
+  },
+  {
+    "id": "anime",
+    "name": "Anime Legends",
+    "unlockDays": 14,
+    "description": "Unlock at 14-day streak: the greatest anime warriors.",
+    "heroes": [
+      "Goku",
+      "Vegeta",
+      "Piccolo",
+      "Future Trunks"
+    ]
+  },
+  {
+    "id": "fantasy",
+    "name": "Fantasy Legends",
+    "unlockDays": 30,
+    "description": "Unlock at 30-day streak: epic fantasy heroes.",
+    "heroes": [
+      "Aragorn",
+      "Gandalf",
+      "Samwise",
+      "Éowyn"
+    ]
+  },
+  {
+    "id": "football",
+    "name": "Football Legends",
+    "unlockDays": 50,
+    "description": "Unlock at 50-day streak: world-class athletes.",
+    "heroes": [
+      "Cristiano Ronaldo",
+      "Ronaldo Nazário",
+      "Ronaldinho",
+      "Kaká"
+    ]
+  },
+  {
+    "id": "gaming",
+    "name": "Retro Gaming",
+    "unlockDays": 100,
+    "description": "Unlock at 100-day streak: legendary game characters.",
+    "heroes": [
+      "Mega Man X",
+      "Cloud Strife",
+      "Link",
+      "Samus Aran"
+    ]
+  }
+]
