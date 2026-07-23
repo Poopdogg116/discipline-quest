@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mission-accepted",
+    "hero": "Action Hero",
+    "title": "Mission Accepted",
+    "image": "assets/heroes/mission-accepted.png"
+  },
+  {
+    "id": "day-six-warrior",
+    "hero": "Ryu",
+    "title": "Day 6 Warrior",
+    "image": "assets/heroes/day-six-warrior.png"
+  },
+  {
+    "id": "goku-support",
+    "hero": "Goku",
+    "title": "You Got This",
+    "image": "assets/heroes/goku-support.png"
+  },
+  {
+    "id": "day-six-map",
+    "hero": "Quest Warrior",
+    "title": "The World Changes",
+    "image": "assets/heroes/day-six-map.png"
+  },
+  {
+    "id": "van-damme-dashboard",
+    "hero": "Jean-Claude Van Damme",
+    "title": "Discipline Is Strength",
+    "image": "assets/heroes/van-damme-dashboard.png"
+  },
+  {
+    "id": "hero-gallery",
+    "hero": "Hall of Heroes",
+    "title": "Build the Legend",
+    "image": "assets/heroes/hero-gallery.png"
+  }
+]
